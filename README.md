@@ -29,4 +29,3 @@ git clone https://github.com/karan-sharma-2312/-playwright-first-blog.git
 ## Notes
 
 - GitHub Pages may take 1 to 3 minutes after each push.
-- Keep your main blog file name as index.html in the publish root.
