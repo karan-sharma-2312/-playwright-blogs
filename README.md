@@ -1,22 +1,32 @@
-# GitHub Pages Blog Setup
+# Playwright Blog (GitHub Pages)
 
-This folder contains a ready static blog page in index.html.
+This project is a beginner-friendly static blog page about Playwright.
 
-## Publish to GitHub Pages
+## Why this project exists
 
-1. Create a new GitHub repository.
-2. Upload all files from this folder.
-3. In GitHub repo settings, open Pages.
-4. Under Build and deployment:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: / (root)
-5. Save and wait for deployment.
+I wrote this to help new developers quickly understand:
 
-Your blog URL will look like:
+- What Playwright is
+- How to install it in VS Code with Python
+- How to publish a simple blog using GitHub Pages
 
-https://github.com/karan-sharma-2312/-playwright-first-blog.git
+## Project files
 
-## Local Preview
+- index.html: The full blog page content and styling
+- README.md: Setup and publishing instructions
 
-Open index.html directly in a browser, or use VS Code Live Server.
+## If someone clones this repo
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/karan-sharma-2312/-playwright-first-blog.git
+```
+
+2. Open the project folder in VS Code.
+
+
+## Notes
+
+- GitHub Pages may take 1 to 3 minutes after each push.
+- Keep your main blog file name as index.html in the publish root.
