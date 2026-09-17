@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Playwright? Install in VS Code with Python</title>
+  <meta name="description" content="A practical guide to understand Playwright and install it in VS Code with Python." />
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --ink: #1f1d1a;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --paper: #fffdf8;
+      --muted: #6b665d;
+      --card: #fefaf0;
+      --line: #d9d1c1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 10%, #fff8df 0 20%, transparent 50%),
+        radial-gradient(circle at 85% 0%, #d6f3ee 0 18%, transparent 42%),
+        linear-gradient(180deg, #faf7ef 0%, #f2ede2 100%);
+      line-height: 1.7;
+    }
+
+    .shell {
+      width: min(920px, 92vw);
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.7rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--paper);
+      animation: fadeInUp 550ms ease both;
+    }
+
+    h1 {
+      font-family: "Fraunces", "Times New Roman", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2rem, 6vw, 4rem);
+      margin: 1rem 0 0.8rem;
+      max-width: 18ch;
+      animation: fadeInUp 700ms ease both;
+    }
+
+    .subtitle {
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      animation: fadeInUp 850ms ease both;
+    }
+
+    .meta {
+      margin-top: 1.3rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      animation: fadeInUp 1000ms ease both;
+    }
+
+    article {
+      margin-top: 2rem;
+      background: color-mix(in srgb, var(--paper), white 15%);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: clamp(1.2rem, 3vw, 2.1rem);
+      box-shadow: 0 10px 30px rgba(35, 33, 28, 0.08);
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.7rem;
+      font-family: "Fraunces", "Times New Roman", serif;
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: #f0fbf9;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    pre {
+      margin: 0.9rem 0 1.4rem;
+      background: #1f2937;
+      color: #ecfdf5;
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      overflow-x: auto;
+      border: 1px solid #374151;
+    }
+
+    code {
+      font-family: "Consolas", "Courier New", monospace;
+      font-size: 0.93rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.9rem;
+      margin: 1rem 0;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 12px;
+      padding: 0.9rem;
+    }
+
+    .card strong {
+      color: var(--accent-2);
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="shell">
+    <span class="badge">Playwright + Python + VS Code</span>
+    <h1>What Is Playwright and How Do You Install It in VS Code?</h1>
+    <p class="subtitle">A clean beginner guide for Python users who want to automate browsers, write tests, and run everything from VS Code.</p>
+    <p class="meta">Published: 2026-09-17</p>
+
+    <article>
+      <h2>What is Playwright?</h2>
+      <p>Playwright is a browser automation framework. It can control Chromium, Firefox, and WebKit from code. Teams use it for end-to-end testing, UI checks, and browser workflows.</p>
+
+      <div class="grid">
+        <div class="card"><strong>Cross-browser:</strong> One API for multiple browsers.</div>
+        <div class="card"><strong>Reliable waits:</strong> It auto-waits for many UI states.</div>
+        <div class="card"><strong>Language support:</strong> Python, JavaScript, Java, and .NET.</div>
+      </div>
+
+      <h2>Install in VS Code with Python</h2>
+      <p>Open the integrated terminal in VS Code and run:</p>
+      <pre><code>py -m pip install playwright</code></pre>
+
+      <p>If py does not exist on your machine, use:</p>
+      <pre><code>python -m pip install playwright</code></pre>
+
+      <h2>Install browser binaries</h2>
+      <p>The package is not enough. You also need browser binaries:</p>
+      <pre><code>py -m playwright install</code></pre>
+
+      <h2>Verify installation</h2>
+      <pre><code>py -m pip show playwright
+py -m playwright --version</code></pre>
+
+      <div class="callout">
+        In this setup, Python Playwright is installed and working at version 1.63.0.
+      </div>
+
+      <h2>Quick test script</h2>
+      <pre><code>from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://example.com")
+    print(page.title())
+    browser.close()</code></pre>
+
+      <p>Run it with:</p>
+      <pre><code>py test_playwright.py</code></pre>
+
+      <h2>Common issues</h2>
+      <ul>
+        <li>If py is not found, use python.</li>
+        <li>If browser launch fails, run playwright install again.</li>
+        <li>If import fails, check that VS Code uses the same Python interpreter where you installed Playwright.</li>
+      </ul>
+
+      <h2>Wrap up</h2>
+      <p>Playwright is one of the strongest options for modern browser automation. Once installed in VS Code, you can build from simple scripts to full end-to-end suites quickly.</p>
+    </article>
+
+    <footer>Created by Karan Sharma (https://github.com/karan-sharma-2312)</footer>
+  </main>
+</body>
+</html>
